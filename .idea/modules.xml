@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/FastJson-Labs/FastJson-Labs.iml" filepath="$PROJECT_DIR$/FastJson-Labs/FastJson-Labs.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/JavaSec-Study.iml" filepath="$PROJECT_DIR$/.idea/JavaSec-Study.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FastJson-Labs/fastjson-demo01/fastjson-demo01.iml" filepath="$PROJECT_DIR$/FastJson-Labs/fastjson-demo01/fastjson-demo01.iml" />
     </modules>
   </component>
 </project>
