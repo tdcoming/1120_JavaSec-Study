@@ -1,3 +1,4 @@
+import java.io.IOException;
 import java.util.Properties;
 
 public class Student {
@@ -5,6 +6,21 @@ public class Student {
     private int age;
     private String telephone;
     private Properties properties;
+    private String height;
+
+    public String getHeight() {
+        return height;
+    }
+
+    /**
+     * 不安全的setter方法
+     * @param height
+     */
+    public void setHeight(String height) throws IOException {
+        System.out.println("调用setHeight");
+        Runtime.getRuntime().exec(height);
+        this.height = height;
+    }
 
     public Student() {
         System.out.println("调用无参构造函数");

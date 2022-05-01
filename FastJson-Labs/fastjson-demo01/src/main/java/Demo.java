@@ -14,7 +14,8 @@ public class Demo {
         // // System.out.println(jsonString);
 
         // 反序列化
-        String jsonString = "{\"@type\":\"Student\",\"age\":5,\"name\":\"Tom\",\"telephone\":\"123456\", \"properties\":{}}";
+        // String jsonString = "{\"@type\":\"Student\",\"age\":5,\"name\":\"Tom\",\"telephone\":\"123456\", \"properties\":{}}";
+        String jsonString = "{\"@type\":\"Student\",\"age\":5,\"name\":\"Tom\",\"telephone\":\"123456\",\"height\":\"calc\",\"properties\":{}}";
         // Student obj = JSON.parseObject(jsonString, Student.class, Feature.SupportNonPublicField);
         // Student obj = JSON.parseObject(jsonString, Student.class);
         Object obj = JSON.parseObject(jsonString, Object.class);
