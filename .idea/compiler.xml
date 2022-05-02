@@ -9,9 +9,9 @@
         <module name="fastjson-demo01" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="fastjson-demo01" target="1.5" />
-      <module name="FastJson-Labs" target="1.5" />
+    <bytecodeTargetLevel target="8">
+      <module name="fastjson-demo01" target="8" />
+      <module name="FastJson-Labs" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>
